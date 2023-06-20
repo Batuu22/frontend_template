@@ -1,0 +1,2 @@
+=> emmet.io => https://docs.emmet.io/cheat-sheet/
+font awesome => https://fontawesome.com/search
