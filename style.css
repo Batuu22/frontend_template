@@ -1,9 +1,112 @@
-/* *{
+/* 
+Project: One Page
+Author: Batuhan Nedim Temel
+Date: 20/June/2023
+version: v.1
+*/
 
-} /*
+/*###############################################*/
+/* Root */
 
-/* html{} */
+
+/*###############################################*/
+/* Common Property */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+}
+
+
 
 body{
     font-family: 'Manrope', sans-serif;
+    line-height: 1.2;
+    position: relative;
+}
+
+a{
+   text-decoration: none; 
+}
+
+ul{
+   list-style: none;  /* list-style:none */
+}
+
+img{
+   max-width: 100%;
+   height: auto;
+}
+
+img:hover{
+   opacity: 0.9;
+   box-shadow: 2px 2px 20px #000;
+   transition: 4s all;
+   cursor: pointer;     /*  resmin üzerine geldindiginde el işareti çıkar... */
+}
+
+i{
+   font-size: 1.5rem;
+}
+
+.my_clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* My special size  */
+.fsize1{
+    font-size: 1rem; /* 15*1 */
+}
+
+.fsize2{
+    font-size: 2rem; /* 15*2 */
+}
+
+.fsize3{
+    font-size: 3rem; /* 15*3 */
+}
+
+.fsize4{
+    font-size: 4rem; /* 15*4 */
+}
+
+/* Line-clamp  */
+.line-clamp5{
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+.line-clamp8{
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8;
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+.line-clamp10{
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10;
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+
+/*######################################################################*/
+
+/* header */
+header{
+    background-image: url(./img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -1;
+    height: 80vh;
+    padding-top: 4rem;
 }
