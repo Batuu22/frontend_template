@@ -7,7 +7,9 @@ version: v.1
 
 /*###############################################*/
 /* Root */
-
+:root{
+    --templateBgColor:rgb(27, 28, 29);
+}
 
 /*###############################################*/
 /* Common Property */
@@ -97,8 +99,13 @@ i{
     overflow: hidden;
 }
 
-
 /*######################################################################*/
+
+/* Navbar*/
+.dark_mode{
+    background-color: var(--templateBgColor);  /* => burada root icindeki veriyi degisken olarak aldık...*/
+    color: #fff;
+}
 
 /* header */
 header{
@@ -109,4 +116,11 @@ header{
     z-index: -1;
     height: 80vh;
     padding-top: 4rem;
+}
+
+/* footer */
+footer{
+    min-height: 10rem;
+    width: auto;
+    color: #fff;
 }

@@ -29,6 +29,10 @@
   <!-- external CSS -->
   <link href="style.css" rel="stylesheet" />
 
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar_id">
@@ -53,21 +57,24 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+              <i class="fa-regular fa-user text-primary" ></i>
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Login</a></li>
+              <li><a class="dropdown-item" href="#">Register</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
+       
+        </ul>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
+            <button class="btn btn-primary" onclick="darkModu()"><i class="fa-sharp fa-solid fa-moon"></i></button> <!--Js üzerinde yapıcaksak genellikle button kullanılır.-->
           </li>
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <input id="tags" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-primary" type="submit">Search</button> <!--btn-outline-success-->
         </form>
       </div>
@@ -95,13 +102,26 @@
   <!-- end header codes -->
 
   <!--start main codes-->
-  <main id="main_id"></main>
+  <main id="main_id">
+  <section>
+  <article><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum similique fugit, pariatur tenetur molestiae soluta quae eaque incidunt facilis inventore dolor quisquam laborum exercitationem beatae modi illo ipsum blanditiis mollitia.
+  Labore quisquam, modi quas libero aperiam doloribus cupiditate, sint, autem laborum eaque voluptatibus similique quasi reiciendis esse nobis repellendus. Adipisci dignissimos numquam tempora id vero quam animi quibusdam tempore nobis.
+  Doloremque sint vel a ea vero? Reprehenderit exercitationem, consequuntur odio qui atque obcaecati debitis, consectetur saepe eius provident corrupti eveniet necessitatibus porro voluptatum quibusdam nisi quam unde neque modi? Perferendis?
+  In dolores accusamus, facere ratione eum perferendis possimus, aliquid sed veniam placeat commodi dolor? Rerum commodi fugit assumenda veniam illo in error similique, accusamus incidunt laudantium provident perferendis doloremque sunt.
+  Harum, modi autem illum illo debitis aperiam. Sapiente quisquam possimus blanditiis reiciendis tenetur ab quod laudantium placeat, assumenda nobis praesentium ipsa rem aspernatur, eos reprehenderit eaque odit facilis delectus nostrum.
+  Quisquam reiciendis ex quibusdam! Nihil tempora accusamus ducimus fugit itaque quis nemo, delectus ut reprehenderit atque architecto, consequatur ad velit excepturi similique ex, blanditiis debitis sit. Mollitia, natus delectus! Iste.
+  Dolore ipsum nam maiores sequi possimus! Possimus ipsam maxime voluptas exercitationem obcaecati iste explicabo natus ipsa inventore! Voluptatibus reiciendis quisquam reprehenderit quibusdam nostrum placeat obcaecati fuga deleniti ea dolores. Nihil.
+  Laborum sed recusandae vitae eaque ratione doloribus veniam natus obcaecati dolor nihil odio, consequuntur distinctio id, porro sunt earum illum magnam maiores? Dolore fugiat quibusdam eveniet accusamus praesentium ea quas.
+  </p></article>  
+  </section>  
+  </main>
   <!-- end main codes -->
 
   <!--start footer codes-->
-  <footer id="footer_id"></footer>
+  <footer id="footer_id" class="bg-dark">
+      <div class="text-center p-5" id="copy_right">2021- <span id="date_id"></span>  &copy; All rights reserved</div>  
+  </footer>
   <!-- end footer codes -->
-
 
   <!-- end codes -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
