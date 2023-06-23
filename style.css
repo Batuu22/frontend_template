@@ -124,3 +124,14 @@ footer{
     width: auto;
     color: #fff;
 }
+
+/* back_top */
+#back_top{
+position: fixed;
+right: 0;
+bottom: 0;
+}
+
+#back_top:hover{
+    opacity: 0.9;
+}

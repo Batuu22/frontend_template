@@ -1,7 +1,6 @@
 // Dark Mode
 let darkModu = () => {       // => Arrow function() 
-    alert("Dark Mode");
-    window.document.classList.toggle("dark_mode");
+    document.body.classList.toggle("dark_mode");
 }
 
 //input search  // Jquery'den yararlandik...
