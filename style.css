@@ -60,6 +60,15 @@ i{
     clear: both;
 }
 
+.myHeading{
+    margin-bottom: 2rem;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-shadow: 0.4px -0.9px rgba(0,0,0,0.9);
+    opacity: 0.7;
+}
+
 /* My special size  */
 .fsize1{
     font-size: 1rem; /* 15*1 */
@@ -107,6 +116,13 @@ i{
     overflow: hidden;
 }
 
+.line-clamp20{
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 20;
+    display: -webkit-box;
+    overflow: hidden;
+}
+
 /*######################################################################*/
 
 /* Navbar*/
@@ -137,12 +153,19 @@ header{
     font-size: 5rem;
 }
 
-#messages h2{
-    margin-bottom: 2rem;
-    text-decoration: underline;
-    text-transform: uppercase;
-    text-shadow: 0.4px -0.9px rgba(0,0,0,0.9);
-    opacity: 0.7;
+/* parallax*/
+#parallax{
+    background-color: transparent;
+    background-image: url(./img/parallax.jpg);
+    background-size: cover;
+    height: 35rem;
+    padding: 2rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#parallax h2,p{
+    color: #fff;
 }
 
 /* footer */
