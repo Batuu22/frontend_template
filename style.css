@@ -54,6 +54,10 @@ i{
    font-size: 1.5rem;
 }
 
+p{
+    color:#000!important;
+}
+
 .my_clearfix::after{
     content: "";
     display: block;
@@ -148,6 +152,10 @@ header{
     margin-bottom: 3rem;
 }
 
+#messages .container .row .text-center p{
+    color: #000 !important;
+}
+
 #messages i{
     color: #00f;
     font-size: 5rem;
@@ -165,7 +173,26 @@ header{
 }
 
 #parallax h2,p{
-    color: #fff;
+    color: #fff !important;
+    
+}
+
+/* newspaper */
+#newspaper{
+    height: 35rem;
+    padding: 2rem;
+}
+
+
+#newspaper p{
+    color: #000 !important;
+    text-align: justify;
+
+}
+
+/* blog*/
+#blog{
+    background-color: #b5b8ff;
 }
 
 /* footer */
